@@ -1,0 +1,60 @@
+{
+  "Capnp": {
+    "Address": "[::]:37621",
+    "Enable": true
+  },
+  "Consensus": {
+    "DeltaDuration": 1000000000,
+    "FuzzTesting": false,
+    "TimeoutPrecommit": 2000000000,
+    "TimeoutPrepare": 2000000000,
+    "TimeoutPropose": 3000000000
+  },
+  "Http": {
+    "Address": "[::]:8080",
+    "Enable": true
+  },
+  "Logger": {
+    "Colorfull": true,
+    "Levels": {
+      "_capnp": "error",
+      "_consensus": "info",
+      "_http": "error",
+      "_network": "error",
+      "_pool": "error",
+      "_state": "info",
+      "_sync": "info",
+      "default": "info"
+    }
+  },
+  "Network": {
+    "Address": "/ip4/0.0.0.0/tcp/0",
+    "EnableKademlia": true,
+    "EnableMDNS": true,
+    "Name": "zarb",
+    "NodeKeyFile": "node_key",
+    "Bootstrap": {
+      "Addresses": [],
+      "MinPeerThreshold": 0,
+      "Period": 60000000000
+    }
+  },
+  "State": {
+    "Store": {
+      "Path": "data"
+    }
+  },
+  "Sync": {
+    "BlockPerMessage": 10,
+    "CacheSize": 10000,
+    "HeartBeatTimeout": 5000000000,
+    "InitialBlockDownload": true,
+    "Moniker": "test",
+    "SessionTimeout": 3000000000,
+    "StartingTimeout": 5000000000
+  },
+  "TxPool": {
+    "MaxSize": 2000,
+    "WaitingTimeout": 2000000000
+  }
+}

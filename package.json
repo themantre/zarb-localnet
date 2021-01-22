@@ -1,0 +1,16 @@
+{
+  "name": "zarb-localnet",
+  "version": "1.0.0",
+  "description": "Zarb Testnet",
+  "main": "make.js",
+  "dependencies": {
+    "rimraf": "^2.6.2",
+    "tomlify-j0.4": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mantre <mantre@protonmail.com>",
+  "license": "MIT"
+}
